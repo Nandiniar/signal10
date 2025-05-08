@@ -1,0 +1,15 @@
+<h1>Signal</h1>
+<h1>{{count}}</h1><!-- aise likhne se [signal:10 ]-->
+<h1>{{count()}}</h1>
+<h1>{{x}}</h1>
+<button (click)="count.set(100)">Increase Value</button> <!--.set karne se signal ke value change ho jayege-->
+<button (click)="updatevalue('inc')">Update he value</button>
+<hr>
+<br>
+<br>
+<button (click)="updatevalue('dec')">Decrement</button>
+<h1>{{count()}}</h1>
+<button (click)="updatevalue('inc')">Increament</button>
+<app-datasignal></app-datasignal>
+<hr>
+<app-computedsignal></app-computedsignal>
